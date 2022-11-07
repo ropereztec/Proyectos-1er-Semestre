@@ -1,0 +1,62 @@
+PS4,Doom Eternal: The Ancient Gods Part 1,Good,7
+XONE,Watch Dogs: Legion,Great,8
+PC,Ring Of Pain,Great,8
+NS,Pikmin 3 Deluxe,Great,8
+PC,Ghostrunner,Good,7
+PC,Disc Room Getting Buzzed,Great,8
+PS4,NHL 21,Superb,9
+PC,Noita,Good,8
+PC,Amnesia: Rebirth,Great,8
+PS4,Genshin Impact,Good,7
+NS,Ikenfell,Fair,6
+NS,Ring Fit Adventure,Superb,9
+XONE,Star Wars: Squadrons,Good,7
+NS,Mario Kart Live: Home Circuit,Good,7
+PC,I Am Dead,Good,7
+PS4,FIFA 21,Great,8
+NS,Super Mario Bros,Good,7
+PC,The Solitaire Conspiracy,Good,7
+XONE,Crash Bandicoot 4,Great,8
+NS,Kirby Fighters 2,Fair,6
+PC,Pendragon,Fair,6
+PC,Serious Sam 4,Good,7
+PS4,NBA 2K21,Fair,6
+PC,Crusader Kings 3,Great,8
+PS4,Spelunky 2,Great,8
+PC,Mafia: Definitive Edition,Fair,6
+PC,Surgeon Simulator 2,Fair,6
+NS,Hades,Superb,9
+PS4,13 Sentinels: Aegis Rim,Superb,9
+NS,Super Mario 3D All-Stars,Great,8
+PC,Road To Guangdong,Terrible,2
+XONE,Vampire: The Masquerade - Shadows Of New York,Fair,6
+PS4,Othercide,Great,8
+PC,Marvel's Avengers,Good,7
+XONE,Tell Me Why,Good,7
+NS,Moon The Bright Side,Great,8
+PC,Star Renegades,Great,8
+NS,The Last Campfire,Great,8
+PS4,Tony Hawk's Pro Skater 1,Superb,9
+PC,Paradise Killer,Superb,9
+PC,Evergate,Great,8
+PS4,Madden 21,Fair,6
+NS,A Short Hike,Superb,9
+PS4,Project Cars 3,Good,7
+PC,Control AWE DLC,Fair,6
+PS4,Windbound,Mediocre,5
+PC,Thousand Threads,Mediocre,5
+PC,Spiritfarer,Superb,9
+NS,No Straight Roads,Good,7
+PC,Microsoft Flight Simulator,Superb,9
+NS,Next Stop Nowhere,Bad,3
+PS4,PGA Tour 2K21,Great,8
+PC,Dead By Daylight,Superb,9
+PC,Mortal Shell,Great,8
+PC,Skater XL,Mediocre,5
+PC,Battletoads,Fair,6
+XONE,Hyper Scape,Fair,6
+PC,A Total War Saga: Troy,Good,7
+PC,Risk Of Rain 2,Great,8
+PS4,Fall Guys: Ultimate Knockout,Good,7
+PC,Skully,Mediocre,5
+PC,Umurangi Generation,Superb,9
