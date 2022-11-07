@@ -5,7 +5,7 @@ En dado caso que se quieran comunicar conmigo mi correo institucional es roperez
 
 # Introducción a la Programación
 ## Practicas
-🌟 [Practica de Registro y Compra de Regalos](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Laboratorio%203%20(Taller%20de%20Programaci%C3%B3n).py)
+🌟 [Practica de Registro y Compra de Regalos](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Regalos.py)
 
 Esta es la ultima practica del curso del curso, en este sistema se registran usuarios y regalos, tambien permite comprar regalos mediante filtros tales como: Sexo y Edad.
 
