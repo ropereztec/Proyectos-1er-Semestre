@@ -35,4 +35,8 @@ En el Laboratorio 1 se desarrolla un sistema que simula un supermercado, donde u
 ## Ensamblador
 🌟 [Calculadora de Resta y Multiplicación](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Calculadora%20de%20Resta%20y%20multiplicacion%20de%20un%20digito.asm)
 
+En este sistema desarrollado en ensamblador (emu8086), se ejecuta una calculadora que permite 2 de las operaciones aritmeticas basicas, las cuales son la resta y la multiplicación. Al ejecutarse se muestra un menu que solicita el tipo de operación que desea efectuar.
+
 🌟 [Encontrar el número mayor de 5 números](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/num%20mayor.asm)
+
+En este sistema desarrollado en ensamblador (emu8086), se le solicita al usuario que digite 5 números diferentes de un solo dígito, para luego mostrar cual es el mayor de todos.
