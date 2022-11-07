@@ -10,6 +10,10 @@ En dado caso que se quieran comunicar conmigo mi correo institucional es roperez
 Esta es la ultima practica del curso del curso, en este sistema se registran usuarios y regalos, tambien permite comprar regalos mediante filtros tales como: Sexo y Edad.
 
 ## Exámenes
+ 🌟 [Examen I](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Examen%20I.py)
+ 
+ En este examen se desarrolla un sistema donde se adoptan mascotas, para poder adoptarlas la persona tiene que estar registrada en el sistema. **NOTA:** Este es la primera evaluación realizada en el semestre, por lo cual, el desarollo del sistema no es el más óptimo, sin embargo cumple con lo solicitado, puede estar más optimizado.
+ 
 
 # Taller a la Programación
 ## Laboratorios
