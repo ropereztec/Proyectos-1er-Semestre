@@ -9,6 +9,14 @@ En dado caso que se quieran comunicar conmigo mi correo institucional es roperez
 
 Esta es la ultima practica del curso del curso, en este sistema se registran usuarios y regalos, tambien permite comprar regalos mediante filtros tales como: Sexo y Edad.
 
+🌟 [Matrices](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/TCMatrices.py)
+
+En este ejercicio se resolvieron 2 problemas
+- Crear una matriz de 5x5.Debe llenar los campos de la matriz con números aleatorios (de 1 a 50) creados por un random. Dicha matriz se debe mostrar en la interfaz. Ahora, debe recorrer la matriz, y por cada numero par que se encuentre debe colocar el símbolo de $, y por cada número impar debe colocar el símbolo de #. Dicha matriz, también se debe mostrar en la consola.
+- El sistema debe permitir por pantalla digitar las dimensiones de la matriz, por ejemplo, en un campo se coloca un 4, y en otro campo un 3, lo cual se debe formar una matriz de 4x3.
+Una vez creada la matriz, la misma se debe llenar con números enteros generados por un random (utilice números del 1 al 20). Se debe ver en pantalla la matriz creada y llena con los números.
+Ahora debe recorrer la matriz, e indicar en pantalla cuantas filas inician (en el primer campo) con el número 5. Si no hay ninguna, debe indicar cero.
+
 ## Exámenes
  🌟 [Examen I](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Examen%20I.py)
  
