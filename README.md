@@ -1,4 +1,4 @@
-# Proyectos-1er-Semestre
+# Proyectos 1er Semestre
 Este repositorio es un lugar donde subo todos mis proyectos durante mi primer semestre en el Instituto Tecnologico de Costa Rica, claramente se nota que muchas veces el codigo no esta 100% optimizado, este es el codigo de un **inexperto a la programación**, sin embargo creo que es un codigo facil de entender.
 
 En dado caso que se quieran comunicar conmigo mi correo institucional es roperez@estudiantec.cr y mi correo personal es ropereztec@gmail.com
@@ -8,6 +8,8 @@ En dado caso que se quieran comunicar conmigo mi correo institucional es roperez
 🌟 [Practica de Registro y Compra de Regalos](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Laboratorio%203%20(Taller%20de%20Programaci%C3%B3n).py)
 
 Esta es la ultima practica del curso del curso, en este sistema se registran usuarios y regalos, tambien permite comprar regalos mediante filtros tales como: Sexo y Edad.
+
+## Exámenes
 
 # Taller a la Programación
 ## Laboratorios
@@ -22,6 +24,13 @@ En el laboratorio 2, se desarrolla un sistema que simula una liga de equipos de 
 🌟 [LABI](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Lab1.py)
 
 En el Laboratorio 1 se desarrolla un sistema que simula un supermercado, donde usted registra una serie de productos y las personas que van a comprar, luego para poder comprar las personas **deben** de estar registradas. Este Lab aún **NO** está 100% optimizado. Nota: 82.5
+
+## Proyectos
+🌟 [Proyecto 1](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/proy.py)
+
+
+## Prácticas
+
 # Fundamentos de Organización de Computadoras
 ## Ensamblador
 🌟 [Calculadora de Resta y Multiplicación](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Calculadora%20de%20Resta%20y%20multiplicacion%20de%20un%20digito.asm)
