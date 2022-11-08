@@ -4,6 +4,8 @@ from colorama import Fore, Back, Style
 from termcolor import colored
 import datetime
 
+ejesocupados = []
+
 ocupado = []
 
 matriz=[]
@@ -36,24 +38,30 @@ def salas_de_cine():
                 if conta_x == 9:
                     conta_y += 1
                     conta_x =0
-    NumFila = 0
-    NumColumna = 0
-    for i in range(25):
-        while True:
-            NumColumna = randint(0,8)
-            NumFila = randint(0,7)
-            if matriz[NumFila][NumColumna] in ocupado:
-                return
-            else:
-                ocupado.append(matriz[NumFila][NumColumna])
-                matriz[NumFila][NumColumna] =colored(matriz[NumFila][NumColumna], 'red', attrs=['bold'])
-                break
+        NumFila = 0
+        NumColumna = 0
+        for i in range(25):
+            while True:
+                NumColumna = randint(0,8)
+                NumFila = randint(0,7)
+                num = [NumColumna,NumFila]
+                if num not in ejesocupados:
+                    if matriz[NumFila][NumColumna] in ocupado:
+                        return
+                    else:
+                        ocupado.append(matriz[NumFila][NumColumna])
+                        matriz[NumFila][NumColumna] =colored(matriz[NumFila][NumColumna], 'red', attrs=['bold'])
+                        ejesocupados.append(num)
+                        break
+                else:
+                    i -= 1
     cont +=1
+    print("------------Pantalla -------------")
     print(tabulate(matriz))
     print("Precio de la fila 1 - 4: 5000 \nPrecio de la fila 5 - 8: 3000")
 
 
-#####################################################REGISTRO######################################################################################################################
+####################################################REGISTRO######################################################################################################################
 
 
 
