@@ -30,16 +30,22 @@ def salas_de_cine():
     conta_y = 0
     listaletra= ["A","B","C","D","E","F","G","H","I"]
     listanum= ["8","7","6","5","4","3","2","1"]
+    for k in listanum:
+        for v in listaletra:
+            matriz[conta_y][conta_x] = k + v
+            conta_x +=1
+            if conta_x == 9:
+                conta_y += 1
+                conta_x =0
+    for o in ocupado:
+        for m in matriz:
+            for v in m:
+                if o == v:
+                    v = colored(v, 'red', attrs=['bold'])
+
+    NumFila = 0
+    NumColumna = 0
     if cont ==1:
-        for k in listanum:
-            for v in listaletra:
-                matriz[conta_y][conta_x] = k + v
-                conta_x +=1
-                if conta_x == 9:
-                    conta_y += 1
-                    conta_x =0
-        NumFila = 0
-        NumColumna = 0
         for i in range(25):
             while True:
                 NumColumna = randint(0,8)
@@ -59,7 +65,6 @@ def salas_de_cine():
     print("------------Pantalla -------------")
     print(tabulate(matriz))
     print("Precio de la fila 1 - 4: 5000 \nPrecio de la fila 5 - 8: 3000")
-
 
 ####################################################REGISTRO######################################################################################################################
 
