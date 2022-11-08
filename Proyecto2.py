@@ -2,12 +2,13 @@ from tabulate import tabulate
 from random import randint
 from colorama import Fore, Back, Style
 from termcolor import colored
+import datetime
 
 ocupado = []
 
 matriz=[]
 
-Personas = []
+Personas = [{"Nombre":"Roosevelt","Cedula":208400858,"Genero":"Masculino","Asientos":[],"Valor a Pagar":0}]
 
 def funcion_matriz():
     for i in range(8):
@@ -49,6 +50,12 @@ def salas_de_cine():
                 break
     cont +=1
     print(tabulate(matriz))
+    print("Precio de la fila 1 - 4: 5000 \nPrecio de la fila 5 - 8: 3000")
+
+
+#####################################################REGISTRO######################################################################################################################
+
+
 
 def registro():
     persona = {}
@@ -65,6 +72,7 @@ def registro():
     persona["Cedula"] = cedula
     persona["Genero"] = genero
     persona["Asientos"] = []
+    persona["Valor a Pagar"] = 0
     Personas.append(persona)
 
 def verificaciondeexistencia():
@@ -78,6 +86,8 @@ def verificaciondeexistencia():
             verificacion = False
 
 
+#####################################################COMPRAS######################################################################################################################
+
 def com():
     if len(i["Asientos"]) < 5:
         question2 = str(input("Ingrese el asiento que desea: "))
@@ -88,18 +98,29 @@ def com():
             i["Asientos"].append(question2)
             print("Asiento comprado")
             print("Asientos comprados por", i["Nombre"])
+            cont = 0
             for k in matriz:
                 for v in k:
                     if v == question2:
-                        matriz[matriz.index(k)][k.index(v)] = colored(v, 'red', attrs=['bold'])
+                        matriz[matriz.index(k)][k.index(v)] = colored(v, 'cyan', attrs=['bold'])
+                        break
+                cont += 1
+                break
+            if cont < 5:
+                i["Valor a Pagar"] += 3000
+            elif cont >= 5:
+                i["Valor a Pagar"] += 5000
         print(tabulate(matriz))
         question3 = str(input("¿Desea comprar otro asiento? \n1< Si \n2< No \n"))
         if question3 == "1":
             com()
         elif question3 == "2":
+            i["Fecha"] = datetime.datetime.now()
+            print("Valor a pagar: ", i["Valor a Pagar"])
             print("¡Gracias por su compra!")
             #Aqui se va al menu
     elif len(i["Asientos"]) == 5:
+        i["Fecha"] = datetime.datetime.now()
         print("Ha comprado el máximo de asientos")
         #Aqui se va al menu
 
@@ -128,6 +149,68 @@ def compras():
 
 
 
+#########################################REPORTES###################################################################################################################################
+def reporte1():
+    hombres = 0
+    mujeres = 0
+    for i in Personas:
+        if len(i["Asientos"]) > 0:
+            if i["Genero"] == "Masculino":
+                hombres += 1
+            elif i["Genero"] == "Femenino":
+                mujeres += 1
+    print("Hombres: ", hombres)
+    print("Mujeres: ", mujeres)
+def reporte2():
+    print(ocupado)
+    print(tabulate(matriz))
+
+def reporte3():
+    cont = 72
+    for k in matriz:
+        for v in k:
+            if v in ocupado:
+                cont -= 1
+    mul = cont * 100 / 72
+    print("Porcentaje de asientos disponibles: ", mul, "%")
+
+def reporte4():
+    question1 = int(input("Ingrese su cedula: "))
+    for p in Personas:
+        if p["Cedula"] == question1:
+            print("Nombre: ", p["Nombre"])
+            print("Cedula: ", p["Cedula"])
+            print("Genero: ", p["Genero"])
+            print("Asientos: ", p["Asientos"])
+            print("Valor a pagar: ", p["Valor a Pagar"])
+            print("Fecha: ", p["Fecha"])
+            break
+        else:
+            print("No se encuentra registrado")
+
+def reporte5():
+    for i in Personas:
+        if len(i["Asientos"]) > 0:
+            d
+
+def reportes():
+    question1 = int(input("Ingrese el código del reporte que desea ver \n1< Cantidad de Hombres y Mujeres que compraron entradas\n2< Espacios Ocuapdos\n3< Porcentaje de espacios Disponibles\n4< Imprimir información de Compra de una Persona\n5< Imprimir las personas que más compraron entradas\n"))
+    if question1 == 1:
+        reporte1()
+    elif question1 == 2:
+        reporte2()
+    elif question1 == 3:
+        reporte3()
+    elif question1 == 4:
+        reporte4()
+    elif question1 == 5:
+        reporte5()
+    else:
+        print("No ha ingresado una opción correcta")
+    
+
+
+#####################################################MENU######################################################################################################################
 
 def menu():
     while True:
@@ -146,7 +229,7 @@ def menu():
             compras()
         elif opcionSelec == 4:
             print("¡Reportes!")
-            #
+            reportes()
         elif opcionSelec==5:
             print("¡Gracias por usar nuestro sistema!")
             quit()
