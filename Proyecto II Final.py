@@ -10,7 +10,7 @@ ocupado = []
 
 matriz = []
 
-Personas = [{"Nombre": "Roosevelt", "Cedula": 208400858, "Genero": "Masculino", "Asientos": [], "Valor a Pagar": 0}]
+Personas = [{"Nombre": "Roosevelt", "Cedula": 208400858, "Genero": "Masculino", "Asientos": [], "Valor a Pagar": 0, "Fecha": ""}]
 
 
 def funcion_matriz(): #Esta funcion crea la matriz
@@ -92,6 +92,7 @@ def registro():
     persona["Genero"] = genero
     persona["Asientos"] = []
     persona["Valor a Pagar"] = 0
+    persona["Fecha"] = ""
     Personas.append(persona)
 
 
@@ -212,27 +213,30 @@ def reporte5():
     may1 = 0 #Esta variable es la que se encarga de contar la cantidad de asientos que compro la persona con mayor cantidad de asientos
     may2 = 0 #Esta variable es la que se encarga de contar la cantidad de asientos que compro la segunda persona con mayor cantidad de asientos
     for i in Personas: #Aqui se recorre la lista de personas
-        if i["Valor a Pagar"] > may1 and i["Valor a Pagar"] > may2: #Aqui se verifica si el valor a pagar de la persona es mayor a la variable may1 y may2
-            may1 = i["Valor a Pagar"] #Aqui se le asigna el valor a pagar de la persona a la variable may1
-        elif i["Valor a Pagar"] < may1 and i["Valor a Pagar"] > may2: #Aqui se verifica si el valor a pagar de la persona es menor a la variable may1 y mayor a la variable may2
-            may2 = i["Valor a Pagar"] #Aqui se le asigna el valor a pagar de la persona a la variable may2
-        elif i["Valor a Pagar"] == may1 and i["Valor a Pagar"] == may2: #Aqui se verifica si el valor a pagar de la persona es igual a la variable may1 y may2
-            may2 = i["Valor a Pagar"] #Aqui se le asigna el valor a pagar de la persona a la variable may2
-    for i in Personas: #Aqui se recorre la lista de personas
-        if i["Valor a Pagar"] == may1: #Aqui se verifica si el valor a pagar de la persona es igual a la variable may1
-            print("La persona que mas ha gastado es: ", i["Nombre"]) #Aqui se imprime el nombre de la persona que mas ha gastado
-            print("Cedula: ", i["Cedula"]) #Aqui se imprime la cedula de la persona que mas ha gastado
-            print("Genero: ", i["Genero"]) #Aqui se imprime el genero de la persona que mas ha gastado
-            print("Asientos: ", i["Asientos"]) #Aqui se imprime los asientos que compro la persona que mas ha gastado
-            print("Valor a pagar: ", i["Valor a Pagar"]) #Aqui se imprime el valor a pagar de la persona que mas ha gastado
-            print("Fecha: ", i["Fecha"]) #Aqui se imprime la fecha en la que la persona que mas ha gastado compro los asientos
-        elif i["Valor a Pagar"] == may2: #Aqui se verifica si el valor a pagar de la persona es igual a la variable may2
-            print("La segunda persona que mas ha gastado es: ", i["Nombre"]) #Aqui se imprime el nombre de la segunda persona que mas ha gastado
-            print("Cedula: ", i["Cedula"]) #Aqui se imprime la cedula de la segunda persona que mas ha gastado
-            print("Genero: ", i["Genero"]) #Aqui se imprime el genero de la segunda persona que mas ha gastado
-            print("Asientos: ", i["Asientos"]) #Aqui se imprime los asientos que compro la segunda persona que mas ha gastado
-            print("Valor a pagar: ", i["Valor a Pagar"]) #Aqui se imprime el valor a pagar de la segunda persona que mas ha gastado
-            print("Fecha: ", i["Fecha"]) #Aqui se imprime la fecha en la que la segunda persona que mas ha gastado compro los asientos
+        if len(i["Asientos"]) > 0: #Aqui se verifica si la cantidad de asientos de la persona es mayor a 0
+            if i["Valor a Pagar"] > may1 and i["Valor a Pagar"] > may2: #Aqui se verifica si el valor a pagar de la persona es mayor a la variable may1 y may2
+                may1 = i["Cedula"]
+            elif i["Valor a Pagar"] < may1 and i["Valor a Pagar"] > may2: #Aqui se verifica si el valor a pagar de la persona es menor a la variable may1 y mayor a la variable may2
+                may2 = i["Cedula"]
+            elif i["Valor a Pagar"] == may1 and i["Valor a Pagar"] == may2: #Aqui se verifica si el valor a pagar de la persona es igual a la variable may1 y may2
+                may2 = i["Cedula"]
+        for i in Personas: #Aqui se recorre la lista de personas
+            if i["Cedula"] == may1: #Aqui se verifica si la cedula de la persona es igual a la variable may1
+                print("La persona que mas ha gastado es: ", i["Nombre"]) #Aqui se imprime el nombre de la persona que mas ha gastado
+                print("Cedula: ", i["Cedula"]) #Aqui se imprime la cedula de la persona que mas ha gastado
+                print("Genero: ", i["Genero"]) #Aqui se imprime el genero de la persona que mas ha gastado
+                print("Asientos: ", i["Asientos"]) #Aqui se imprime los asientos que compro la persona que mas ha gastado
+                print("Valor a pagar: ", i["Valor a Pagar"]) #Aqui se imprime el valor a pagar de la persona que mas ha gastado
+                print("Fecha: ", i["Fecha"]) #Aqui se imprime la fecha en la que la persona que mas ha gastado compro los asientos
+            elif i["Cedula"] == may2: #Aqui se verifica si la cedula de la persona es igual a la variable may2
+                print("La segunda persona que mas ha gastado es: ", i["Nombre"]) #Aqui se imprime el nombre de la segunda persona que mas ha gastado
+                print("Cedula: ", i["Cedula"]) #Aqui se imprime la cedula de la segunda persona que mas ha gastado
+                print("Genero: ", i["Genero"]) #Aqui se imprime el genero de la segunda persona que mas ha gastado
+                print("Asientos: ", i["Asientos"]) #Aqui se imprime los asientos que compro la segunda persona que mas ha gastado
+                print("Valor a pagar: ", i["Valor a Pagar"]) #Aqui se imprime el valor a pagar de la segunda persona que mas ha gastado
+                print("Fecha: ", i["Fecha"]) #Aqui se imprime la fecha en la que la segunda persona que mas ha gastado compro los asientos
+            else:
+                print("Ninguna persona ha comprado asientos")
 
 
 def reportes():
