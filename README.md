@@ -46,6 +46,10 @@ En el Laboratorio 1 se desarrolla un sistema que simula un supermercado, donde u
 🌟 [Proyecto 1](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/proy.py)
 
 
+
+🌟 [Proyecto 2](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Proyecto%20II%20Final.py)
+🌟 [Sistema a Desarrollar](https://github.com/ropereztec/Proyectos-1er-Semestre/blob/main/Proyecto%202%20-%20Taller.pdf)
+
 ## Prácticas
 
 # Fundamentos de Organización de Computadoras
